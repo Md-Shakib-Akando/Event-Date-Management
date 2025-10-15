@@ -1,1 +1,28 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@media (max-width: 640px) {
+  .fc-header-toolbar {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch;
+
+    gap: 4px;
+  }
+
+
+  .fc-toolbar-chunk:first-child,
+  .fc-toolbar-chunk:last-child {
+    order: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+  .fc-toolbar-chunk:nth-child(2) {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+}
